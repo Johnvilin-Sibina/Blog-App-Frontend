@@ -8,6 +8,7 @@ import Blogs from './Pages/Blogs';
 import Signin from './Pages/Signin';
 import Signup from './Pages/Signup';
 import Header from './Components/Header';
+import FooterComp from './Components/FooterComp';
 const App = () => {
   return (
    <BrowserRouter>
@@ -20,6 +21,7 @@ const App = () => {
     <Route path='/signin' element={<Signin />} />
     <Route path='/signup' element={<Signup />} />
    </Routes>
+   <FooterComp />
    </BrowserRouter>
   );
 };
