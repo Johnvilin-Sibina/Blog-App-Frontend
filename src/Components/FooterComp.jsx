@@ -4,7 +4,7 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsTwitter } 
 
 const FooterComp = () => {
     return (
-        <Footer container className='border border-t-8'>
+        <Footer container className='border border-t-8 dark:bg-black'>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
