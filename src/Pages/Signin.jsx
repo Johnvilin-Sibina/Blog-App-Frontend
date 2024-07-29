@@ -40,8 +40,9 @@ const Signin = () => {
         return dispatch(signInFailure(((data.message))));
       }
       if (response.ok) {
+        localStorage.setItem('Token',data.token)
         dispatch(signInSuccess(data))
-        navigate("/");
+        navigate("/blogs");
       }
     } catch (error) {
         dispatch(signInFailure(((error.message))));
